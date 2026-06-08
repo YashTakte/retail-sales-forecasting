@@ -1,0 +1,14 @@
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+prophet>=1.1.5
+lightgbm>=4.3
+
+# API
+fastapi>=0.111
+uvicorn[standard]>=0.30
+pydantic>=2.7
+
+# Web UI + plotting
+gradio>=4.0
+plotly>=5.20

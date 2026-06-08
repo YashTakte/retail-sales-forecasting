@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Trained model artifacts (regenerate with `python src/train.py`)
+models/*.pkl
+models/*.json
+
+# Processed data (regenerate with `python src/data_pipeline.py`)
+data/processed/*.csv
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Prophet leaves these behind while fitting
+*.stan
+/tmp/

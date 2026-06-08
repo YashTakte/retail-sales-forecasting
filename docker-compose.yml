@@ -1,0 +1,26 @@
+# Runs two containers from the same image:
+#   * api  — the FastAPI service on :8000
+#   * ui   — the Gradio app on :7860
+#
+# Both share the image built once, so the models are trained a single time.
+#
+#   docker compose up --build
+#
+# Then open http://localhost:7860 (UI) and http://localhost:8000/docs (API).
+
+services:
+  api:
+    build: .
+    image: retail-forecasting:latest
+    ports:
+      - "8000:8000"
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+
+  ui:
+    image: retail-forecasting:latest
+    # reuse the image the `api` service builds
+    depends_on:
+      - api
+    ports:
+      - "7860:7860"
+    command: python app/gradio_app.py
