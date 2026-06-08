@@ -24,3 +24,9 @@ data/processed/*.csv
 # Prophet leaves these behind while fitting
 *.stan
 /tmp/
+
+# Screenshots / docs images
+docs/screenshots/
+*.png
+*.jpg
+*.jpeg
