@@ -21,7 +21,7 @@ fully runnable with **Docker**. The data is the classic Superstore dataset:
 about 10,000 orders over four years, 17 sub-categories, and ~$2.3M in sales.
 
 **Live demo:** 
-`https://huggingface.co/spaces/<your-username>/retail-sales-forecasting`
+[Live](https://huggingface.co/spaces/yashtakte/retail-sales-forecasting)
 
 **Tableau dashboards:**
 [View on Tableau Public](https://public.tableau.com/app/profile/yash.takte/viz/SCDashboard_17664144788230/SalesDashboard?publish=yes)
